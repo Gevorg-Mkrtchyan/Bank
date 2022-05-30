@@ -45,7 +45,7 @@ public class CardHolderService {
         return cardRepository.findCardByCardHolderId(cardHolderID);
     }
 
-    public void card2Card(long money, String cardNumberFrom, String cardNumberTo) {
+    public void cardToCard(long money, String cardNumberFrom, String cardNumberTo) {
         Optional<Card> cardFrom = cardRepository.findCardByCardNumber(cardNumberFrom);
         Optional<Card> cardTo = cardRepository.findCardByCardNumber(cardNumberTo);
         if (cardFrom.isEmpty()) {

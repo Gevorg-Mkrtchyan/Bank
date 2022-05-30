@@ -12,7 +12,6 @@ public class Account {
     @Column(name = "id")
     private Long id;
     @Column(name = "iban", length = 40)
-//    @Pattern(regexp = "^[A-Z]{2}\\[0-9][A-Z]{8}")
     private String iban;
     @Column(name = "balance", length = 50)
     @Min(1000)
